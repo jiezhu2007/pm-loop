@@ -71,4 +71,4 @@ OpenViking 源码通过 `vendor/openviking/source` Git submodule 随仓库提供
 
 ## 许可证
 
-PM Loop 自有代码采用 MIT，第三方 OpenViking 仍按其 AGPL-3.0 条款使用。详见 `vendor/openviking/THIRD_PARTY_NOTICES.md`。
+PM Loop 自有代码采用 Apache License 2.0，第三方 OpenViking 仍按其 AGPL-3.0 条款使用。详见 `LICENSE` 和 `vendor/openviking/THIRD_PARTY_NOTICES.md`。

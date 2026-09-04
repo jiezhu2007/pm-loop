@@ -1,0 +1,53 @@
+{
+  "schema_version": "pm-loop.retention-deletion-capabilities.v1",
+  "capability_version": 1,
+  "kill_switch": false,
+  "default_action": "deny",
+  "capabilities": [
+    {
+      "capability_id": "cap-pm-timeline-logs-v1",
+      "source_id": "pm-timeline-run-logs",
+      "root_id": "skills",
+      "relative_subtree": "pm-timeline/state/logs",
+      "object_contract": "operational-log.v1",
+      "action_profile": "expire-file-v1",
+      "rollout_phase": "stable",
+      "max_objects_per_batch": 500,
+      "max_bytes_per_day": 536870912,
+      "valid_from": "2026-09-04T00:00:00Z",
+      "expires_at": "2027-09-04T00:00:00Z",
+      "approving_adr": "ADR-179",
+      "signature": "base64:LNMxOT3atxJOLu5cku226EICdUTIP6RF3dP6xFg8XmQ="
+    },
+    {
+      "capability_id": "cap-product-intel-logs-v1",
+      "source_id": "product-intelligence-archived-logs",
+      "root_id": "skills",
+      "relative_subtree": "product-intelligence-monitor/state/logs",
+      "object_contract": "operational-log.v1",
+      "action_profile": "expire-file-v1",
+      "rollout_phase": "stable",
+      "max_objects_per_batch": 500,
+      "max_bytes_per_day": 536870912,
+      "valid_from": "2026-09-04T00:00:00Z",
+      "expires_at": "2027-09-04T00:00:00Z",
+      "approving_adr": "ADR-179",
+      "signature": "base64:DT8cDkxBcDCpmN+CsCuiYOU9a57mSSOEp1abYJtJhEs="
+    },
+    {
+      "capability_id": "cap-runtime-snapshot-v1",
+      "source_id": "scheduler-runtime-backups",
+      "root_id": "pm_loop",
+      "relative_subtree": "scheduler-migration/runtime-backups",
+      "object_contract": "rebuildable-runtime-backup.v1",
+      "action_profile": "expire-runtime-snapshot-v1",
+      "rollout_phase": "stable",
+      "max_objects_per_batch": 20,
+      "max_bytes_per_day": 5368709120,
+      "valid_from": "2026-09-04T00:00:00Z",
+      "expires_at": "2027-09-04T00:00:00Z",
+      "approving_adr": "ADR-179",
+      "signature": "base64:TfPXgPjTGc4fBf7/s3TS5ApGyukm9TmN7qXU5X9qhUY="
+    }
+  ]
+}

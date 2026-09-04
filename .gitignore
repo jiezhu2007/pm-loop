@@ -1,0 +1,29 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+build/
+dist/
+*.egg-info/
+
+# PM Loop runtime state is intentionally kept outside this repository.
+state/
+runs/
+output/
+outputs/
+*.db
+*.db-shm
+*.db-wal
+*.lock
+!uv.lock
+*.running
+*.done
+
+# Local credentials and machine-specific launchd configuration.
+.env
+.env.*
+config/*.local.*
+scripts/*.local.*

@@ -1,0 +1,42 @@
+{
+  "schema_version": "pm-loop.retention-policy.v3",
+  "policy_version": 3,
+  "default_class": "R5",
+  "default_action": "hold",
+  "rules": [
+    {
+      "rule_id": "expire-operational-logs",
+      "match": {"object_contract": ["operational-log.v1"], "authority": ["rebuildable_cache"]},
+      "class": "R2",
+      "action": "expire",
+      "hot_days": 30,
+      "quarantine_days": 0,
+      "requires": ["sealed", "reference_closed", "synchronous_quarantine", "post_check"],
+      "mode": "observe_only"
+    },
+    {
+      "rule_id": "protect-formal-business-records",
+      "match": {"authority": ["business_record", "decision_record"]},
+      "class": "R0",
+      "action": "protect",
+      "mode": "observe_only"
+    },
+    {
+      "rule_id": "protect-audit-evidence",
+      "match": {"authority": ["audit_evidence", "product_state"]},
+      "class": "R4",
+      "action": "hold",
+      "mode": "observe_only"
+    },
+    {
+      "rule_id": "expire-rebuildable-runtime-backup",
+      "match": {"object_contract": ["rebuildable-runtime-backup.v1"], "authority": ["rebuildable_cache"]},
+      "class": "R2",
+      "action": "expire",
+      "hot_days": 7,
+      "quarantine_days": 0,
+      "requires": ["reference_closed", "manifest_closed", "synchronous_quarantine", "restore_smoke", "post_check"],
+      "mode": "observe_only"
+    }
+  ]
+}

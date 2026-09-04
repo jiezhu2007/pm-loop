@@ -1,0 +1,54 @@
+{
+  "schema_version": "competitive-radar.translation-overrides.v1",
+  "updated_at": "2026-09-03",
+  "translations": {
+    "Newsroom | Palantir": "Palantir 新闻室",
+    "The latest news, press releases, blogs, and demos from Palantir.": "Palantir 最新新闻、新闻稿、博客和演示。",
+    "Read the Databricks Databricks AI category on the company blog for the latest employee stories and events.": "阅读 Databricks 公司博客中的 Databricks AI 分类，了解最新员工故事和活动。",
+    "Here are 19,042 public repositories matching this topic...": "有 19,042 个公开仓库匹配该主题……",
+    "Snailclimb / JavaGuide": "仓库：Snailclimb / JavaGuide",
+    "langgenius / dify": "仓库：langgenius / dify",
+    "TauricResearch / TradingAgents": "仓库：TauricResearch / TradingAgents",
+    "OpenHands / OpenHands": "仓库：OpenHands / OpenHands",
+    "koala73 / worldmonitor": "仓库：koala73 / worldmonitor",
+    "Leonxlnx / taste-skill": "仓库：Leonxlnx / taste-skill",
+    "agent · GitHub Topics · GitHub": "agent · GitHub 主题 · GitHub",
+    "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects.": "GitHub 是人们构建软件的地方。超过 1.5 亿用户在 GitHub 上发现、派生并参与超过 4.2 亿个项目。",
+    "Artificial Intelligence": "人工智能",
+    "Highest rated artificial intelligence products": "评分最高的人工智能产品",
+    "OpenAI, Claude, and Cursor cover chat, deep analysis, and repo-aware coding. New AI Browser automates growth ops with cloud sessions and CAPTCHA.": "OpenAI、Claude 和 Cursor 覆盖聊天、深度分析和理解代码仓库的编程场景。新的 AI Browser 通过云端会话和 CAPTCHA 自动化增长运营。",
+    "Muse Spark 1.3": "Muse Spark 1.3",
+    "Gemini 3.8 Flash and 3.8 Flash Cyber": "Gemini 3.8 Flash 和 Gemini 3.8 Flash Cyber",
+    "Google avoids a breakup of its ad tech business": "Google 避免其广告技术业务被拆分",
+    "Holden's Lightning Flight": "霍尔登的闪电飞行",
+    "Uber shuts operations in Nigeria and Uganda with immediate effect": "Uber 立即停止在尼日利亚和乌干达的运营",
+    "Fable 5.1 World Modeling": "Fable 5.1 世界建模",
+    "How AI-native companies turn workflows into operating capability": "AI 原生公司如何将工作流转化为运营能力",
+    "迈向 Astra：关键能力与前沿防护机制": "迈向 Astra：关键能力与前沿防护机制",
+    "ChatGPT 现可连接医疗保健数据源": "ChatGPT 现可连接医疗保健数据源",
+    "OpenAI 支持加州推进青少年 AI 安全的法案": "OpenAI 支持加州推进青少年 AI 安全的法案",
+    "OpenAI 新闻 | OpenAI": "OpenAI 新闻 | OpenAI",
+    "及时了解人工智能技术的快速发展及其为人类带来的益处。": "及时了解人工智能技术的快速发展及其为人类带来的益处。",
+    "Our most advanced models for coding and knowledge work. Their research capabilities also offer an early glimpse of how AI models will contribute to scientific progress.": "这是我们目前最先进的编码和知识工作模型；其研究能力也初步展示了 AI 模型将如何助力科学进步。",
+    "Previewing the Model Hardware Standard We’re opening a research preview of the Model Hardware Standard (MHS), a shared specification for AI agents to safely operate physical devices, to a first group of scientific research labs and advanced manufacturers.": "预览 Model Hardware Standard（MHS）。我们正在向首批科研实验室和先进制造商开放这项研究预览；它是一项帮助 AI Agent 安全操作物理设备的共享规范。",
+    "Introducing Claude Fable 5.1 and Claude Mythos 5.1": "推出 Claude Fable 5.1 和 Claude Mythos 5.1",
+    "Newsroom \\ Anthropic": "Anthropic 新闻室",
+    "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.": "Anthropic 是一家 AI 安全和研究公司，致力于构建可靠、可解释、可操控的 AI 系统。",
+    "Magic Manga Girl (:30)": "Magic Manga Girl（30 秒）",
+    "Tennis (:30)": "Tennis（30 秒）",
+    "Use Your Computer and Browser": "使用你的电脑和浏览器",
+    "Talk to ChatGPT Work": "与 ChatGPT Work 对话",
+    "Create Slides, Docs, and Templates": "创建幻灯片、文档和模板",
+    "Use ChatGPT Work on Your Phone": "在手机上使用 ChatGPT Work",
+    "Turn any idea into a finished design with layouts and text using ChatGPT Images.": "使用 ChatGPT Images 的布局和文字，把任何想法变成完成度较高的设计。",
+    "Turn your image into any art style you can imagine with ChatGPT Images.": "用 ChatGPT Images 将你的图片转换成你能想象的任意艺术风格。",
+    "See how ChatGPT Work can help with tasks in your desktop apps and browser. Use Computer to start music in Spotify, then combine Chrome and Google Calendar to prepare a time-off request and an out-of-office event.": "了解 ChatGPT Work 如何协助完成桌面应用和浏览器中的任务。使用 Computer 在 Spotify 播放音乐，再结合 Chrome 和 Google Calendar 准备请假申请和外出自动回复日程。",
+    "New Action capability": "新的 Action 能力"
+    ,"prefix:Palantir software halves sepsis deaths at US hospital；The Sepsis Hub, developed with Tampa General Hospital in Florida, detects subtle changes in vital signs so antibiotics are given early": "Palantir 软件将美国一家医院的败血症死亡率减半；Sepsis Hub 由佛罗里达州坦帕综合医院共同开发，可识别生命体征的细微变化，使抗生素能够更早使用。"
+    ,"prefix:langgenius / dify Star 154k Code Issues Pull requests Discussions Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted": "langgenius / dify（15.4 万 Star）：在一个协作式工作区中构建 Agent 工作流和 RAG 流水线，支持丰富的 AI 模型与工具；可部署到云端、VPC 或自托管环境，让团队无需重建技术栈即可从原型走向生产。"
+    ,"prefix:How AI-native companies turn workflows into operating capability | OpenAI；Basis, Clay, and Exa Labs use AI agents to improve onboarding, account management, and developer integrations.": "AI 原生企业如何将工作流转化为运营能力。Basis、Clay 和 Exa Labs 使用 AI Agent 改进入职、客户管理和开发者集成，为企业负责人提供可借鉴的实践。文章指出，领先企业正把 Agent 接入公司上下文和工具，承接更实质的工作，并把成功流程标准化、可重复地执行。"
+    ,"prefix:Introducing Claude Fable 5.1 and Claude Mythos 5.1 Announcements Sep 1, 2026 Our most advanced models for coding and knowledge work. Their research capabilities also offer an early glimpse of how AI models will contribute to scientific progress.": "推出 Claude Fable 5.1 和 Claude Mythos 5.1。Anthropic 将其定位为面向编码与知识工作的最先进模型，其研究能力也初步展示了 AI 模型如何促进科学进步。"
+    ,"prefix:AI RESEARCH March 5, 2026|3 min read Meet KARL: A faster agent for enterprise knowledge, powered by custom RL": "AI 研究，2026 年 3 月 5 日，阅读约 3 分钟：发布 KARL，一款由定制强化学习驱动、面向企业知识的更快 Agent。该文聚焦企业 Agent 的强化学习，并邀请用户试用 Databricks 的企业 Agent 定制 RL。"
+    ,"prefix:AI Agents – Tools that use AI to plan, reason, and take actions across tools and workflows, often completing multi-step tasks with minimal human input.": "AI Agents：利用 AI 在工具和工作流之间规划、推理并采取行动的产品；它们通常以很少的人工介入完成多步骤任务。"
+  }
+}

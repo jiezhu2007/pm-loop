@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.zhujie14.pm-scheduler</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>__CODEX_PYTHON__</string>
+    <string>__PM_LOOP_RUNTIME_ROOT__/scripts/pm_loop_scheduler.py</string>
+    <string>--db-path</string>
+    <string>__PM_LOOP_STATE_ROOT__/pm-system.db</string>
+    <string>--registry</string>
+    <string>__PM_LOOP_RUNTIME_ROOT__/config/schedule-registry.json</string>
+    <string>--canonical-registry</string>
+    <string>__PM_LOOP_PROJECT_ROOT__/scripts/schedule-registry.json</string>
+    <string>--mode</string>
+    <string>calendar</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>__PM_LOOP_RUNTIME_ROOT__</string>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>StartInterval</key>
+  <integer>30</integer>
+  <key>ThrottleInterval</key>
+  <integer>10</integer>
+  <key>ProcessType</key>
+  <string>Background</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PYTHONUNBUFFERED</key>
+    <string>1</string>
+    <key>PYTHONDONTWRITEBYTECODE</key>
+    <string>1</string>
+  </dict>
+  <key>StandardOutPath</key>
+  <string>__PM_LOOP_STATE_ROOT__/scheduler.log</string>
+  <key>StandardErrorPath</key>
+  <string>__PM_LOOP_STATE_ROOT__/scheduler.log</string>
+</dict>
+</plist>

@@ -1,0 +1,35 @@
+{
+  "schema_version": "pm-loop.openviking-dependency.v1",
+  "package": "openviking",
+  "compatible_version": "0.4.16",
+  "upstream": {
+    "repository": "https://github.com/volcengine/OpenViking",
+    "baseline_tag": "v0.4.16",
+    "baseline_commit": "499995f3ed2e7f551a715179c4053772c51ff819",
+    "license": "AGPL-3.0"
+  },
+  "fork": {
+    "repository": "https://github.com/jiezhu2007/OpenViking",
+    "commit": "cf3633f70836bc4cb6867ed9aae7c490d3f62ee6",
+    "branch": "codex/openviking-v11-remainder",
+    "submodule_path": "vendor/openviking/source"
+  },
+  "patch": {
+    "version": "pm-queue-reliability-v1.1",
+    "file": "vendor/openviking/pm-queue-reliability-v1.1.patch",
+    "sha256": "ca6479d4f534f75bc2a2d46d2b33f22da58fe054f948449d1d92628d14bd8df1",
+    "changed_files": [
+      "openviking/utils/model_retry.py",
+      "openviking/utils/circuit_breaker.py",
+      "openviking/storage/queuefs/semantic_processor.py",
+      "openviking/storage/collection_schemas.py",
+      "openviking/observability/usage_audit/inventory.py"
+    ]
+  },
+  "runtime_policy": {
+    "state_is_external": true,
+    "credentials_are_external": true,
+    "openviking_data_is_external": true,
+    "default_endpoint": "http://127.0.0.1:1933"
+  }
+}

@@ -1,0 +1,4 @@
+[submodule "vendor/openviking/source"]
+	path = vendor/openviking/source
+	url = https://github.com/jiezhu2007/OpenViking.git
+	branch = codex/openviking-v11-remainder

@@ -4,6 +4,7 @@ PM Loop 是一套面向个人 PM 工作流的本地控制面。它把来源采�
 
 它解决的不是“再做一个聊天窗口”，而是把一次 PM 工作变成一组可判断的步骤：固定事实快照，说明结论来自哪里，区分草稿和真实写入，并在需要人工决定时停在 Gate。
 
+ ![工作台总览](docs/assets/pm-loop-overview.png) 
 
 ## 能做什么
 
@@ -181,7 +182,6 @@ Retention 负责观察和治理历史数据，不把“发现文件”直接等�
 | 调度配置：日历任务、依赖触发、截止时间和下次运行 | ![调度配置](docs/assets/pm-loop-schedules.png) |
 | 竞品雷达：公开来源、采集运行、证据覆盖和 reviewer 结论 | ![竞品雷达](docs/assets/pm-loop-competitive-radar.png) |
 
-完整工作台首屏见上方的[主截图](docs/assets/pm-loop-workbench.png)。
 
 ## 快速开始
 

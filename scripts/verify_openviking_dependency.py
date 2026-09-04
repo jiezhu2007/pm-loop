@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import subprocess
 from pathlib import Path
 
 
@@ -31,6 +32,22 @@ def verify(root: Path) -> dict[str, object]:
     if not str(manifest["fork"]["commit"]).isalnum() or len(str(manifest["fork"]["commit"])) != 40:
         raise RuntimeError("OpenViking fork commit must be a full 40-character SHA")
     submodule_path = root / str(manifest["fork"].get("submodule_path") or "vendor/openviking/source")
+    submodule_initialized = False
+    try:
+        checked_out = subprocess.run(
+            ["git", "-C", str(submodule_path), "rev-parse", "HEAD"],
+            capture_output=True,
+            text=True,
+            timeout=5,
+            check=False,
+        )
+        submodule_initialized = (
+            checked_out.returncode == 0
+            and checked_out.stdout.strip() == str(manifest["fork"]["commit"])
+            and (submodule_path / "pyproject.toml").is_file()
+        )
+    except (OSError, subprocess.SubprocessError):
+        submodule_initialized = False
     return {
         "ok": True,
         "package": manifest["package"],
@@ -39,7 +56,7 @@ def verify(root: Path) -> dict[str, object]:
         "patch_sha256": actual_hash,
         "changed_files": changed_files,
         "submodule_path": str(submodule_path.relative_to(root)),
-        "submodule_initialized": (submodule_path / ".git").exists() or (submodule_path / "pyproject.toml").exists(),
+        "submodule_initialized": submodule_initialized,
     }
 
 
